@@ -16,6 +16,7 @@ export const dict: Record<string, Entry> = {
   "nav.careers": { th: "อาชีพ", en: "Careers" },
   "nav.advisor": { th: "คำแนะนำ", en: "Advisor" },
   "nav.electives": { th: "วิชาเลือก", en: "Electives" },
+  "nav.gradeCalculator": { th: "คำนวณเกรด", en: "Grade Calculator" },
   "nav.brand.tagline": { th: "B.Sc. Cybersecurity", en: "B.Sc. Cybersecurity" },
 
   // -------------------------------------------------------- shared chrome
@@ -234,6 +235,16 @@ export const dict: Record<string, Entry> = {
   "plan.col.name": { th: "ชื่อวิชา", en: "Course" },
   "plan.col.credits": { th: "หน่วยกิต", en: "Credits" },
   "plan.col.category": { th: "หมวด", en: "Category" },
+
+  // ---------------------------------------------------------- grade calc
+  "gpa.kicker": { th: "Grade Calculator", en: "Grade Calculator" },
+  "gpa.title": { th: "โปรแกรมคำนวณเกรด (GPA)", en: "GPA Calculator" },
+  "gpa.desc": { th: "เลือกแผนการเรียนและกำหนดเกรดที่คาดหวังในแต่ละเทอมเพื่อคำนวณ GPA รายเทอมและ GPA สะสม", en: "Select your track and expected grades for each term to calculate term GPA and cumulative GPA." },
+  "gpa.summary": { th: "สรุปผลการเรียน", en: "GPA Summary" },
+  "gpa.cumulative": { th: "เกรดเฉลี่ยสะสม (GPAX)", en: "Cumulative GPA (GPAX)" },
+  "gpa.totalCredits": { th: "หน่วยกิตรวม", en: "Total Credits" },
+  "gpa.term": { th: "เทอม", en: "Term" },
+  "gpa.termGpa": { th: "GPA เทอมนี้:", en: "Term GPA:" },
 
   // ---------------------------------------------------------- pathways
   "paths.kicker": { th: "Pathways", en: "Pathways" },

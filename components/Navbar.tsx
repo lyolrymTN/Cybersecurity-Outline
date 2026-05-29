@@ -17,6 +17,7 @@ const NAV_KEYS = [
   { href: "/electives", k: "nav.electives" },
   { href: "/prerequisite", k: "nav.prerequisite" },
   { href: "/study-plan", k: "nav.studyPlan" },
+  { href: "/grade-calculator", k: "nav.gradeCalculator" },
   { href: "/pathways", k: "nav.pathways" },
   { href: "/outcomes", k: "nav.outcomes" },
   { href: "/careers", k: "nav.careers" },

@@ -10,7 +10,7 @@ import {
 import type { Course } from "@/lib/types";
 import { CourseCard } from "@/components/CourseCard";
 import { CategoryBadge } from "@/components/CourseBadge";
-import { CheckCircle2, AlertTriangle, XCircle, BadgeInfo, Search, Check, X, Minus } from "lucide-react";
+import { CheckCircle2, AlertTriangle, XCircle, BadgeInfo, Search, Check, X, Minus, ChevronDown, ChevronRight } from "lucide-react";
 import { useLang } from "@/components/LanguageProvider";
 
 type Bucket = "passed" | "failed" | "none";
@@ -18,6 +18,9 @@ type Bucket = "passed" | "failed" | "none";
 export default function PrerequisitePage() {
   const [state, setState] = useState<Record<string, Bucket>>({});
   const [q, setQ] = useState("");
+  const [expandedYears, setExpandedYears] = useState<Record<string, boolean>>({
+    "1": true, "2": false, "3": false, "4": false, "other": false
+  });
   const { t, courseName } = useLang();
   
   const setBucket = (id: string, b: Bucket) =>
@@ -69,6 +72,24 @@ export default function PrerequisitePage() {
            c.englishName.toLowerCase().includes(query)
     );
   }, [q]);
+
+  const groupedCourses = useMemo(() => {
+    const groups: { [key: string]: Course[] } = {
+      "1": [], "2": [], "3": [], "4": [], "other": []
+    };
+    filteredCourses.forEach(c => {
+      if (c.year) {
+        groups[c.year.toString()].push(c);
+      } else {
+        groups["other"].push(c);
+      }
+    });
+    return groups;
+  }, [filteredCourses]);
+
+  const toggleYear = (y: string) => {
+    setExpandedYears(prev => ({ ...prev, [y]: !prev[y] }));
+  };
 
   const stats = {
     passed: passed.size,
@@ -127,65 +148,92 @@ export default function PrerequisitePage() {
             </div>
           </div>
           
-          <div className="flex-1 overflow-y-auto scroll-fade p-4 space-y-2 bg-slate-50/50 dark:bg-navy-950/20">
-            {filteredCourses.map((c) => {
-              const b = state[c.id] ?? "none";
+          <div className="flex-1 overflow-y-auto scroll-fade p-4 space-y-4 bg-slate-50/50 dark:bg-navy-950/20">
+            {Object.entries(groupedCourses).map(([year, coursesInYear]) => {
+              if (coursesInYear.length === 0) return null;
+              
+              const isExpanded = !!expandedYears[year] || q.length > 0; // Auto-expand when searching
+              const label = year === "other" ? "วิชาอื่นๆ (ไม่มีชั้นปี)" : `วิชาชั้นปีที่ ${year}`;
+              
               return (
-                <div
-                  key={c.id}
-                  className={`flex flex-col sm:flex-row sm:items-center justify-between gap-3 rounded-xl border p-3 transition-colors ${
-                    b === "passed" ? "border-emerald-200 bg-emerald-50 dark:border-emerald-900/50 dark:bg-emerald-900/20" :
-                    b === "failed" ? "border-red-200 bg-red-50 dark:border-red-900/50 dark:bg-red-900/20" :
-                    "border-slate-200 bg-white dark:border-navy-700 dark:bg-navy-800 hover:border-cyan-300 dark:hover:border-cyan-700"
-                  }`}
-                >
-                  <div className="min-w-0 flex-1">
-                    <p className="font-mono text-xs font-semibold text-cyan-700 dark:text-cyan-400">{c.code}</p>
-                    <p className="text-sm font-medium text-navy-900 dark:text-slate-200 truncate mt-0.5">
-                      {courseName(c)}
-                    </p>
-                  </div>
-                  <div className="flex bg-slate-100 dark:bg-navy-900 rounded-lg p-1 self-start sm:self-auto shrink-0 border border-slate-200 dark:border-navy-700">
-                    <button
-                      onClick={() => setBucket(c.id, "passed")}
-                      className={`flex items-center justify-center rounded-md px-3 py-1.5 text-xs font-medium transition-all ${
-                        b === "passed"
-                          ? "bg-emerald-500 text-white shadow-sm"
-                          : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 dark:text-slate-400 dark:hover:bg-emerald-900/30"
-                      }`}
-                      title="สอบผ่าน"
-                    >
-                      <Check className="h-4 w-4 sm:mr-1" />
-                      <span className="hidden sm:inline">{t("prereq.passed")}</span>
-                    </button>
-                    <button
-                      onClick={() => setBucket(c.id, "failed")}
-                      className={`flex items-center justify-center rounded-md px-3 py-1.5 text-xs font-medium transition-all ${
-                        b === "failed"
-                          ? "bg-red-500 text-white shadow-sm"
-                          : "text-slate-600 hover:text-red-600 hover:bg-red-50 dark:text-slate-400 dark:hover:bg-red-900/30"
-                      }`}
-                      title="สอบตก (F)"
-                    >
-                      <X className="h-4 w-4 sm:mr-1" />
-                      <span className="hidden sm:inline">{t("prereq.failed")}</span>
-                    </button>
-                    <button
-                      onClick={() => setBucket(c.id, "none")}
-                      className={`flex items-center justify-center rounded-md px-3 py-1.5 text-xs font-medium transition-all ${
-                        b === "none"
-                          ? "bg-white text-slate-800 shadow-sm dark:bg-navy-700 dark:text-white"
-                          : "text-slate-600 hover:text-slate-900 hover:bg-slate-200/50 dark:text-slate-400 dark:hover:bg-navy-800"
-                      }`}
-                      title="ยังไม่เรียน"
-                    >
-                      <Minus className="h-4 w-4 sm:mr-1" />
-                      <span className="hidden sm:inline">ว่าง</span>
-                    </button>
-                  </div>
+                <div key={year} className="space-y-2">
+                  <button
+                    onClick={() => toggleYear(year)}
+                    className="flex w-full items-center justify-between rounded-lg bg-slate-200/50 dark:bg-navy-800/80 px-4 py-2.5 text-sm font-semibold text-navy-900 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-navy-800 transition-colors"
+                  >
+                    <div className="flex items-center gap-2">
+                      <span className="bg-cyan-500/20 text-cyan-700 dark:text-cyan-300 px-2 py-0.5 rounded-md text-xs">{coursesInYear.length}</span>
+                      {label}
+                    </div>
+                    {isExpanded ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
+                  </button>
+
+                  {isExpanded && (
+                    <div className="space-y-2 pl-1 animate-in slide-in-from-top-1 fade-in duration-200">
+                      {coursesInYear.map((c) => {
+                        const b = state[c.id] ?? "none";
+                        return (
+                          <div
+                            key={c.id}
+                            className={`flex flex-col xl:flex-row xl:items-center justify-between gap-3 rounded-xl border p-3 transition-colors ${
+                              b === "passed" ? "border-emerald-200 bg-emerald-50 dark:border-emerald-900/50 dark:bg-emerald-900/20" :
+                              b === "failed" ? "border-red-200 bg-red-50 dark:border-red-900/50 dark:bg-red-900/20" :
+                              "border-slate-200 bg-white dark:border-navy-700 dark:bg-navy-800 hover:border-cyan-300 dark:hover:border-cyan-700"
+                            }`}
+                          >
+                            <div className="min-w-0 flex-1">
+                              <p className="font-mono text-xs font-semibold text-cyan-700 dark:text-cyan-400">{c.code}</p>
+                              <p className="text-sm font-medium text-navy-900 dark:text-slate-200 truncate mt-0.5">
+                                {courseName(c)}
+                              </p>
+                            </div>
+                            <div className="flex bg-slate-100 dark:bg-navy-900 rounded-lg p-1 self-start xl:self-auto shrink-0 border border-slate-200 dark:border-navy-700">
+                              <button
+                                onClick={() => setBucket(c.id, "passed")}
+                                className={`flex items-center justify-center rounded-md px-3 py-1.5 text-xs font-medium transition-all ${
+                                  b === "passed"
+                                    ? "bg-emerald-500 text-white shadow-sm"
+                                    : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 dark:text-slate-400 dark:hover:bg-emerald-900/30"
+                                }`}
+                                title="สอบผ่าน"
+                              >
+                                <Check className="h-4 w-4 sm:mr-1" />
+                                <span className="hidden sm:inline">{t("prereq.passed")}</span>
+                              </button>
+                              <button
+                                onClick={() => setBucket(c.id, "failed")}
+                                className={`flex items-center justify-center rounded-md px-3 py-1.5 text-xs font-medium transition-all ${
+                                  b === "failed"
+                                    ? "bg-red-500 text-white shadow-sm"
+                                    : "text-slate-600 hover:text-red-600 hover:bg-red-50 dark:text-slate-400 dark:hover:bg-red-900/30"
+                                }`}
+                                title="สอบตก (F)"
+                              >
+                                <X className="h-4 w-4 sm:mr-1" />
+                                <span className="hidden sm:inline">{t("prereq.failed")}</span>
+                              </button>
+                              <button
+                                onClick={() => setBucket(c.id, "none")}
+                                className={`flex items-center justify-center rounded-md px-3 py-1.5 text-xs font-medium transition-all ${
+                                  b === "none"
+                                    ? "bg-white text-slate-800 shadow-sm dark:bg-navy-700 dark:text-white"
+                                    : "text-slate-600 hover:text-slate-900 hover:bg-slate-200/50 dark:text-slate-400 dark:hover:bg-navy-800"
+                                }`}
+                                title="ยังไม่เรียน"
+                              >
+                                <Minus className="h-4 w-4 sm:mr-1" />
+                                <span className="hidden sm:inline">ว่าง</span>
+                              </button>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
               );
             })}
+            
             {filteredCourses.length === 0 && (
               <div className="text-center py-8 text-slate-500 dark:text-slate-400">
                 ไม่พบวิชาที่ค้นหา
