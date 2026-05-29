@@ -1,0 +1,57 @@
+[
+  {
+    "id": "cybersecurity-engineer",
+    "title": "Cybersecurity Engineer",
+    "titleThai": "วิศวกรความมั่นคงปลอดภัยไซเบอร์",
+    "description": "ออกแบบ ติดตั้ง และดูแลระบบป้องกันภัยคุกคามขององค์กร เช่น Firewall, IDS/IPS, SIEM",
+    "skills": ["Network Security", "System Hardening", "SIEM", "Incident Response"],
+    "relatedCourses": ["CP422011", "CP422031", "CP422052", "CP422013"],
+    "electiveHint": "เลือกวิชา/ชุดวิชาแนวเครือข่ายและการป้องกันระบบ"
+  },
+  {
+    "id": "penetration-tester",
+    "title": "Penetration Tester",
+    "titleThai": "ผู้ทดสอบเจาะระบบ",
+    "description": "ทำการทดสอบเจาะระบบเพื่อค้นหาช่องโหว่ก่อนผู้ไม่หวังดี โดยจัดทำรายงานและข้อเสนอแนะการแก้ไข",
+    "skills": ["Offensive Security", "Web/Network Pentesting", "Scripting", "Vulnerability Analysis"],
+    "relatedCourses": ["CP422031", "CP422011", "CP421024"],
+    "electiveHint": "ควรเลือกวิชาเลือกที่เน้น Offensive Security, Web Security, Reverse Engineering"
+  },
+  {
+    "id": "cybersecurity-analyst",
+    "title": "Cybersecurity System Analyst",
+    "titleThai": "นักวิเคราะห์ระบบความมั่นคงปลอดภัยไซเบอร์",
+    "description": "วิเคราะห์เหตุการณ์/ความเสี่ยงด้านความมั่นคง และจัดทำมาตรการเชิงนโยบายและเทคนิค",
+    "skills": ["Risk Analysis", "Threat Intelligence", "Compliance"],
+    "relatedCourses": ["CP422031", "CP422001", "CP422641"],
+    "electiveHint": "เลือกชุดวิชาด้าน Governance, Risk, Compliance"
+  },
+  {
+    "id": "cybersecurity-architect",
+    "title": "Cybersecurity System Architect",
+    "titleThai": "สถาปนิกระบบความมั่นคงปลอดภัยไซเบอร์",
+    "description": "ออกแบบสถาปัตยกรรมความปลอดภัยขององค์กรในระดับ Enterprise",
+    "skills": ["Security Architecture", "Cloud Security", "Zero Trust"],
+    "relatedCourses": ["CP422032", "CP422021", "CP421025"],
+    "electiveHint": "เลือกวิชา Cloud / Enterprise Security / Software Architecture"
+  },
+  {
+    "id": "cybersecurity-consultant",
+    "title": "Cybersecurity Consultant",
+    "titleThai": "ที่ปรึกษาความมั่นคงปลอดภัยไซเบอร์",
+    "description": "ให้คำปรึกษาด้านการประเมินความเสี่ยง ระบบควบคุม และมาตรฐานสากล (ISO 27001, NIST)",
+    "skills": ["Consulting", "Audit", "Standards & Frameworks"],
+    "relatedCourses": ["CP422001", "CP423131", "CP423132"],
+    "electiveHint": "เน้นชุดวิชา Governance/Audit และ Certification ที่เกี่ยวข้อง"
+  },
+  {
+    "id": "cybersecurity-manager",
+    "title": "Cybersecurity System Manager / CISO",
+    "titleThai": "ผู้จัดการ / ผู้บริหารด้านความมั่นคงปลอดภัยไซเบอร์",
+    "description": "บริหารทีมและกลยุทธ์ Cybersecurity ขององค์กร เชื่อมโยงกับกลยุทธ์ธุรกิจ",
+    "skills": ["Leadership", "Strategy", "Risk Governance"],
+    "relatedCourses": ["CP422001", "CP423132", "CP423741"],
+    "electiveHint": "เพิ่มทักษะด้านบริหาร, communication และ business",
+    "note": "ตำแหน่ง CISO ปกติต้องการประสบการณ์ทำงานหลายปี ข้อมูลนี้เป็นคำแนะนำเส้นทางอาชีพระยะยาว"
+  }
+]

@@ -1,0 +1,1325 @@
+[
+  {
+    "id": "LI101001",
+    "code": "LI 101 001",
+    "thaiName": "ภาษาอังกฤษ 1",
+    "englishName": "English I",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "gened",
+    "year": 1,
+    "semester": 1,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 34
+  },
+  {
+    "id": "GE151144",
+    "code": "GE 151 144",
+    "thaiName": "พหุวัฒนธรรม",
+    "englishName": "Multiculturalism",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "gened",
+    "year": 1,
+    "semester": 1,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 34
+  },
+  {
+    "id": "GE341511",
+    "code": "GE 341 511",
+    "thaiName": "การคิดเชิงคำนวณและเชิงสถิติสำหรับเอบีซีดี",
+    "englishName": "Computational & Statistical Thinking for ABCD",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "math",
+    "year": 1,
+    "semester": 1,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 34
+  },
+  {
+    "id": "SC602005",
+    "code": "SC 602 005",
+    "thaiName": "ความน่าจะเป็นและสถิติ",
+    "englishName": "Probability and Statistics",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "math",
+    "year": 1,
+    "semester": 1,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 34
+  },
+  {
+    "id": "SC401201",
+    "code": "SC 401 201",
+    "thaiName": "แคลคูลัสสำหรับวิทยาศาสตร์กายภาพ 1",
+    "englishName": "Calculus for Physical Science I",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "math",
+    "year": 1,
+    "semester": 1,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 34
+  },
+  {
+    "id": "CP421021",
+    "code": "CP 421 021",
+    "thaiName": "การเขียนโปรแกรมเชิงโครงสร้าง",
+    "englishName": "Structured Programming",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "core",
+    "year": 1,
+    "semester": 1,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "riskLevel": "high",
+    "riskReason": "เป็นวิชาพื้นฐานสำคัญของกลุ่ม Programming ที่จะใช้ต่อในวิชา OOP / โครงสร้างข้อมูล / วิชาเชิงระบบหลายวิชา",
+    "sourcePage": 36
+  },
+  {
+    "id": "CP421011",
+    "code": "CP 421 011",
+    "thaiName": "ความบันดาลใจในวิชาชีพความมั่นคงปลอดภัยไซเบอร์",
+    "englishName": "Inspiration in Cybersecurity Career",
+    "credits": 1,
+    "creditStructure": "1(0-2-1)",
+    "category": "core",
+    "year": 1,
+    "semester": 1,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 35
+  },
+  {
+    "id": "CP422001",
+    "code": "CP 422 001",
+    "thaiName": "กฎหมายและจริยธรรมด้านความมั่นคงปลอดภัยไซเบอร์",
+    "englishName": "Cybersecurity Law and Ethic",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "core",
+    "year": 1,
+    "semester": 1,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 35
+  },
+
+  {
+    "id": "LI101002",
+    "code": "LI 101 002",
+    "thaiName": "ภาษาอังกฤษ 2",
+    "englishName": "English II",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "gened",
+    "year": 1,
+    "semester": 2,
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["LI101001"],
+        "allowEquivalent": true,
+        "textOriginal": "000 101 หรือ LI 101 001 หรือ เทียบเท่า"
+      }
+    ],
+    "sourcePage": 34
+  },
+  {
+    "id": "SC002104",
+    "code": "SC 002 104",
+    "thaiName": "วิทยาศาสตร์กายภาพ",
+    "englishName": "Physical Science",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "math",
+    "year": 1,
+    "semester": 2,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 35
+  },
+  {
+    "id": "SC402401",
+    "code": "SC 402 401",
+    "thaiName": "วิยุตคณิตและการประยุกต์",
+    "englishName": "Discrete Mathematics and Applications",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "math",
+    "year": 1,
+    "semester": 2,
+    "prerequisites": [
+      {
+        "type": "course",
+        "courses": ["SC401201"],
+        "allowEquivalent": true,
+        "textOriginal": "SC 401 201 หรือ เทียบเท่า"
+      }
+    ],
+    "sourcePage": 35
+  },
+  {
+    "id": "CP421022",
+    "code": "CP 421 022",
+    "thaiName": "องค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์ขั้นแนะนำ",
+    "englishName": "Introduction to Computer Organization and Architecture",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "core",
+    "year": 1,
+    "semester": 2,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 37
+  },
+  {
+    "id": "CP421023",
+    "code": "CP 421 023",
+    "thaiName": "ขั้นตอนวิธีและโครงสร้างข้อมูล",
+    "englishName": "Algorithm and Data Structure",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "core",
+    "year": 1,
+    "semester": 2,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "riskLevel": "high",
+    "riskReason": "พื้นฐานของการเขียนโปรแกรมขั้นสูงและการวิเคราะห์ข้อมูล",
+    "sourcePage": 37
+  },
+  {
+    "id": "CP421024",
+    "code": "CP 421 024",
+    "thaiName": "การเขียนโปรแกรมเชิงวัตถุ",
+    "englishName": "Object Oriented Programming",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "core",
+    "year": 1,
+    "semester": 2,
+    "prerequisites": [
+      {
+        "type": "course",
+        "courses": ["CP421021"],
+        "textOriginal": "CP 421 021"
+      }
+    ],
+    "riskLevel": "high",
+    "riskReason": "เป็นพื้นฐานของการพัฒนาซอฟต์แวร์และการออกแบบระบบ",
+    "sourcePage": 37
+  },
+  {
+    "id": "CP001001",
+    "code": "CP 001 001",
+    "thaiName": "เอบีซีดีสำหรับทุกวิชาชีพ",
+    "englishName": "ABCD for All Professions",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "core",
+    "year": 1,
+    "semester": 2,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 35
+  },
+
+  {
+    "id": "LI102003",
+    "code": "LI 102 003",
+    "thaiName": "ภาษาอังกฤษ 3",
+    "englishName": "English III",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "gened",
+    "year": 2,
+    "semester": 1,
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["LI101002"],
+        "allowEquivalent": true,
+        "textOriginal": "000 102 หรือ LI 101 002 หรือ เทียบเท่า"
+      }
+    ],
+    "sourcePage": 34
+  },
+  {
+    "id": "GE363789",
+    "code": "GE 363 789",
+    "thaiName": "ผู้ประกอบการสร้างสรรค์",
+    "englishName": "Creative Entrepreneurs",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "gened",
+    "year": 2,
+    "semester": 1,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 34
+  },
+  {
+    "id": "CP422052",
+    "code": "CP 422 052",
+    "thaiName": "ระบบปฏิบัติการขั้นแนะนำ",
+    "englishName": "Introduction to Operating System",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "core",
+    "year": 2,
+    "semester": 1,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 37
+  },
+  {
+    "id": "CP422021",
+    "code": "CP 422 021",
+    "thaiName": "สถาปัตยกรรมเว็บและโมบายแอปพลิเคชัน",
+    "englishName": "Web and Mobile Application Architecture",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "core",
+    "year": 2,
+    "semester": 1,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 37
+  },
+  {
+    "id": "CP422022",
+    "code": "CP 422 022",
+    "thaiName": "การวิเคราะห์และออกแบบสถาปัตยกรรมฐานข้อมูล",
+    "englishName": "Database Architecture Analysis and Design",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "core",
+    "year": 2,
+    "semester": 1,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 37
+  },
+  {
+    "id": "CP421025",
+    "code": "CP 421 025",
+    "thaiName": "การวิเคราะห์และออกแบบซอฟต์แวร์",
+    "englishName": "Software Design and Analysis",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "core",
+    "year": 2,
+    "semester": 1,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 37
+  },
+  {
+    "id": "CP422011",
+    "code": "CP 422 011",
+    "thaiName": "เครือข่ายคอมพิวเตอร์ขั้นแนะนำ",
+    "englishName": "Introduction to Computer Networking",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "core",
+    "year": 2,
+    "semester": 1,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "riskLevel": "critical",
+    "riskReason": "เป็นฐานของวิชาเลือกกลุ่ม Network/Security หลายวิชา (CP 423 211–216, 321–327, 431–437) — หากยังไม่ผ่านอาจไม่สามารถลงวิชาเลือกได้",
+    "sourcePage": 36
+  },
+
+  {
+    "id": "LI102004",
+    "code": "LI 102 004",
+    "thaiName": "ภาษาอังกฤษ 4",
+    "englishName": "English IV",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "gened",
+    "year": 2,
+    "semester": 2,
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["LI102003"],
+        "allowEquivalent": true,
+        "textOriginal": "000 103 หรือ LI 102 003 หรือ เทียบเท่า"
+      }
+    ],
+    "sourcePage": 34
+  },
+  {
+    "id": "CP422031",
+    "code": "CP 422 031",
+    "thaiName": "ความมั่นคงปลอดภัยไซเบอร์ขั้นแนะนำ",
+    "englishName": "Introduction to Cybersecurity",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "core",
+    "year": 2,
+    "semester": 2,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "riskLevel": "critical",
+    "riskReason": "เป็นเงื่อนไขก่อนของวิชาเลือกแทบทุกตัวในกลุ่มความมั่นคง (CP 423 321–327, 431–437, 531–533, 641–645) — ไม่ผ่านวิชานี้จะลงวิชาเลือกกลุ่มหลักไม่ได้",
+    "sourcePage": 36
+  },
+  {
+    "id": "CP422013",
+    "code": "CP 422 013",
+    "thaiName": "พื้นฐานวิศวกรรมระบบคอมพิวเตอร์",
+    "englishName": "Fundamental of Computer System Engineer",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "core",
+    "year": 2,
+    "semester": 2,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 37
+  },
+  {
+    "id": "CP422641",
+    "code": "CP 422 641",
+    "thaiName": "ปัญญาประดิษฐ์ในการรักษาความมั่นคงปลอดภัยไซเบอร์",
+    "englishName": "Artificial Intelligence in Cybersecurity",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "core",
+    "year": 2,
+    "semester": 2,
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "sourcePage": 41
+  },
+  {
+    "id": "CP422032",
+    "code": "CP 422 032",
+    "thaiName": "การประมวลผลบนกลุ่มเมฆและการประยุกต์",
+    "englishName": "Cloud Computing and Application",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "core",
+    "year": 2,
+    "semester": 2,
+    "prerequisites": [
+      {
+        "type": "course",
+        "courses": ["CP422011"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 011 หรือ เทียบเท่า"
+      }
+    ],
+    "sourcePage": 37
+  },
+  {
+    "id": "CP422012",
+    "code": "CP 422 012",
+    "thaiName": "เครือข่ายไร้สายและเคลื่อนที่กับอินเทอร์เน็ตของทุกสิ่งขั้นแนะนำ",
+    "englishName": "Introduction to Wireless and Mobile Networks with Internet of Things",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "core",
+    "year": 2,
+    "semester": 2,
+    "prerequisites": [
+      {
+        "type": "course",
+        "courses": ["CP422011"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 011 หรือ เทียบเท่า"
+      }
+    ],
+    "sourcePage": 37
+  },
+
+  {
+    "id": "CP423200",
+    "code": "CP 423 xxx",
+    "thaiName": "วิชาเลือก หรือ ชุดวิชา",
+    "englishName": "Elective Course or Module Course",
+    "credits": 21,
+    "creditStructure": "21 หน่วยกิต",
+    "category": "elective",
+    "year": 3,
+    "semester": 1,
+    "track": "elective",
+    "prerequisites": [
+      { "type": "none", "textOriginal": "ขึ้นกับวิชาเลือกที่นักศึกษาเลือก" }
+    ],
+    "sourcePage": 30
+  },
+  {
+    "id": "CP423151",
+    "code": "CP 423 151",
+    "thaiName": "มาตรฐานวิชาชีพขั้นพื้นฐานด้านวิทยาการคำนวณ",
+    "englishName": "Computing Career Professional Standards",
+    "credits": 1,
+    "creditStructure": "1(1-0-2)",
+    "category": "core",
+    "year": 3,
+    "semester": 2,
+    "prerequisites": [
+      {
+        "type": "none",
+        "textOriginal": "ไม่มี",
+        "note": "รูปแบบ On-Demand Self Paced Learning · เปิด 2 ภาคการศึกษา"
+      }
+    ],
+    "offered": "always",
+    "offeredTerm": "1/2568 และ 2/2568",
+    "instructor": "อ.ชาติชาย",
+    "sourcePage": 38
+  },
+  {
+    "id": "CP423131",
+    "code": "CP 423 131",
+    "thaiName": "มาตรฐานวิชาชีพขั้นพื้นฐานด้านความมั่นคงปลอดภัยไซเบอร์",
+    "englishName": "Cybersecurity Career Professional Standards",
+    "credits": 2,
+    "creditStructure": "2(2-0-4)",
+    "category": "core",
+    "year": 3,
+    "semester": 2,
+    "prerequisites": [
+      {
+        "type": "none",
+        "textOriginal": "ไม่มี",
+        "note": "รูปแบบ On-Demand Self Paced Learning"
+      }
+    ],
+    "sourcePage": 38
+  },
+  {
+    "id": "CP423132",
+    "code": "CP 423 132",
+    "thaiName": "มาตรฐานวิชาชีพชั้นสูงด้านความมั่นคงปลอดภัยไซเบอร์",
+    "englishName": "Advance Cybersecurity Career Professional Standards",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "core",
+    "year": 3,
+    "semester": 2,
+    "prerequisites": [
+      {
+        "type": "none",
+        "textOriginal": "ไม่มี",
+        "note": "รูปแบบ On-Demand Self Paced Learning"
+      }
+    ],
+    "sourcePage": 38
+  },
+  {
+    "id": "CP423741",
+    "code": "CP 423 741",
+    "thaiName": "ระเบียบวิธีวิจัยและสัมมนาเชิงปฏิบัติการความมั่นคงปลอดภัยไซเบอร์",
+    "englishName": "Cybersecurity Research Methodology, Workshop and Seminar",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "core",
+    "year": 3,
+    "semester": 2,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "riskLevel": "high",
+    "riskReason": "เป็นวิชาเตรียมสำหรับโครงงาน Cybersecurity Project I/II และสหกิจศึกษา",
+    "sourcePage": 36
+  },
+
+  {
+    "id": "CP424731",
+    "code": "CP 424 731",
+    "thaiName": "โครงงานทางความมั่นคงปลอดภัยไซเบอร์ 1",
+    "englishName": "Cybersecurity Project I",
+    "credits": 3,
+    "creditStructure": "3(0-9-6)",
+    "category": "core",
+    "track": "project",
+    "year": 4,
+    "semester": 1,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "riskLevel": "critical",
+    "riskReason": "เป็นเงื่อนไขก่อนทำ Project II กระทบการจบการศึกษาสาย Project",
+    "sourcePage": 43
+  },
+  {
+    "id": "FREE_ELEC_PROJECT_Y4S1",
+    "code": "XXX XXX",
+    "thaiName": "วิชาเลือกเสรี (สาย Project)",
+    "englishName": "Free Elective",
+    "credits": 6,
+    "creditStructure": "6 หน่วยกิต",
+    "category": "free",
+    "track": "project",
+    "year": 4,
+    "semester": 1,
+    "prerequisites": [
+      { "type": "none", "textOriginal": "ขึ้นกับวิชาที่เลือก" }
+    ],
+    "sourcePage": 30
+  },
+  {
+    "id": "CP424732",
+    "code": "CP 424 732",
+    "thaiName": "โครงงานทางความมั่นคงปลอดภัยไซเบอร์ 2",
+    "englishName": "Cybersecurity Project II",
+    "credits": 3,
+    "creditStructure": "3(0-9-6)",
+    "category": "core",
+    "track": "project",
+    "year": 4,
+    "semester": 2,
+    "prerequisites": [
+      {
+        "type": "course",
+        "courses": ["CP424731"],
+        "textOriginal": "CP 424 731"
+      }
+    ],
+    "riskLevel": "critical",
+    "riskReason": "วิชาจบการศึกษาสาย Project",
+    "sourcePage": 43
+  },
+
+  {
+    "id": "CP002001",
+    "code": "CP 002 001",
+    "thaiName": "การเตรียมความพร้อมก่อนปฏิบัติงานสหกิจศึกษาสำหรับนักศึกษาวิทยาลัยการคอมพิวเตอร์",
+    "englishName": "Orientation to Co-Operative Education for Computing Students",
+    "credits": 0,
+    "creditStructure": "1(0-2-1) (ไม่นับหน่วยกิต)",
+    "category": "core",
+    "track": "coop",
+    "year": 4,
+    "semester": 1,
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "sourcePage": 35
+  },
+  {
+    "id": "FREE_ELEC_COOP_Y4S1",
+    "code": "XXX XXX",
+    "thaiName": "วิชาเลือกเสรี (สาย Co-op)",
+    "englishName": "Free Elective",
+    "credits": 6,
+    "creditStructure": "6 หน่วยกิต",
+    "category": "free",
+    "track": "coop",
+    "year": 4,
+    "semester": 1,
+    "prerequisites": [
+      { "type": "none", "textOriginal": "ขึ้นกับวิชาที่เลือก" }
+    ],
+    "sourcePage": 30
+  },
+  {
+    "id": "CP424785",
+    "code": "CP 424 785",
+    "thaiName": "สหกิจศึกษาทางความมั่นคงปลอดภัยไซเบอร์",
+    "englishName": "Co-Operative Education in Cybersecurity",
+    "credits": 6,
+    "creditStructure": "6(0-18-9)",
+    "category": "core",
+    "track": "coop",
+    "year": 4,
+    "semester": 2,
+    "prerequisites": [
+      {
+        "type": "course",
+        "courses": ["CP002001"],
+        "textOriginal": "CP 002 001 (อ้างอิงจากเงื่อนไขสหกิจศึกษาในหลักสูตร)",
+        "note": "เอกสารหลักสูตรระบุว่าต้องผ่าน CP 002 001 ก่อนออกสหกิจ"
+      }
+    ],
+    "riskLevel": "critical",
+    "riskReason": "วิชาจบการศึกษาสาย Co-op หากไม่ผ่านการเตรียมความพร้อมอาจไม่สามารถออกสหกิจได้",
+    "sourcePage": 43
+  },
+
+  {
+    "id": "CP423401",
+    "code": "CP 423 401",
+    "thaiName": "การบูรณาการการเรียนรู้กับการทำงานด้านความมั่นคงปลอดภัยไซเบอร์ 1",
+    "englishName": "Work-Integrated Learning in Cybersecurity I",
+    "credits": 3,
+    "creditStructure": "3(0-6-3)",
+    "category": "core",
+    "track": "wil",
+    "prerequisites": [
+      {
+        "type": "course",
+        "courses": ["CP002001"],
+        "textOriginal": "CP 002 001"
+      }
+    ],
+    "sourcePage": 39
+  },
+  {
+    "id": "CP423402",
+    "code": "CP 423 402",
+    "thaiName": "การบูรณาการการเรียนรู้กับการทำงานด้านความมั่นคงปลอดภัยไซเบอร์ 2",
+    "englishName": "Work-Integrated Learning in Cybersecurity II",
+    "credits": 6,
+    "creditStructure": "6(0-12-6)",
+    "category": "core",
+    "track": "wil",
+    "prerequisites": [
+      {
+        "type": "course",
+        "courses": ["CP423401"],
+        "textOriginal": "CP 423 401"
+      }
+    ],
+    "sourcePage": 39
+  },
+  {
+    "id": "CP423403",
+    "code": "CP 423 403",
+    "thaiName": "การบูรณาการการเรียนรู้กับการทำงานด้านความมั่นคงปลอดภัยไซเบอร์ 3",
+    "englishName": "Work-Integrated Learning in Cybersecurity III",
+    "credits": 6,
+    "creditStructure": "6(0-12-6)",
+    "category": "core",
+    "track": "wil",
+    "prerequisites": [
+      {
+        "type": "course",
+        "courses": ["CP423402"],
+        "textOriginal": "CP 423 402"
+      }
+    ],
+    "sourcePage": 39
+  },
+
+  {
+    "id": "CP423211",
+    "code": "CP 423 211",
+    "thaiName": "การเชื่อมต่ออินเทอร์เน็ต",
+    "englishName": "Internetworking",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "network",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422011", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 011 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "open",
+    "offeredTerm": "1/2568",
+    "instructor": "อ. สาธิต และ อ. พิเศษ",
+    "sourcePage": 39
+  },
+  {
+    "id": "CP423212",
+    "code": "CP 423 212",
+    "thaiName": "การเขียนโปรแกรมและการวางเครือข่ายอัตโนมัติ",
+    "englishName": "Network Automation and Programming",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "network",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422011", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 011 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "closed",
+    "sourcePage": 39
+  },
+  {
+    "id": "CP423213",
+    "code": "CP 423 213",
+    "thaiName": "การประกันคุณภาพ การบริหารและบำรุงรักษาระบบ 1",
+    "englishName": "System Assurance, Administration and Maintenance I",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "network",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422011", "CP423751"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 011 หรือ เทียบเท่า หรือ CP 423 751"
+      }
+    ],
+    "offered": "closed",
+    "sourcePage": 39
+  },
+  {
+    "id": "CP423214",
+    "code": "CP 423 214",
+    "thaiName": "การประกันคุณภาพ การบริหารและบำรุงรักษาระบบ 2",
+    "englishName": "System Assurance, Administration and Maintenance II",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "network",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422011", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 011 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "closed",
+    "sourcePage": 39
+  },
+  {
+    "id": "CP423215",
+    "code": "CP 423 215",
+    "thaiName": "การกำหนดลักษณะและการออกแบบเครือข่ายขั้นสูง",
+    "englishName": "Advanced Network Design and Configuration",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "network",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422011", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 011 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "closed",
+    "sourcePage": 39
+  },
+  {
+    "id": "CP423216",
+    "code": "CP 423 216",
+    "thaiName": "การเชื่อมต่ออินเทอร์เน็ตองค์กรและไอเอสพี",
+    "englishName": "Enterprise and ISP Internetworking",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "network",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422011", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 011 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "closed",
+    "sourcePage": 40
+  },
+
+  {
+    "id": "CP423321",
+    "code": "CP 423 321",
+    "thaiName": "ความมั่นคงปลอดภัยซอฟต์แวร์",
+    "englishName": "Software Security",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "platform",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "closed",
+    "sourcePage": 40
+  },
+  {
+    "id": "CP423322",
+    "code": "CP 423 322",
+    "thaiName": "การวิเคราะห์และป้องกันมัลแวร์",
+    "englishName": "Malware Analysis and Protection",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "platform",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "open",
+    "offeredTerm": "1/2568",
+    "instructor": "อ. เพชร และ อ. พิเศษ",
+    "sourcePage": 40
+  },
+  {
+    "id": "CP423323",
+    "code": "CP 423 323",
+    "thaiName": "การวิเคราะห์เครือข่ายสังคม",
+    "englishName": "Social Network Analysis",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "platform",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423751"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 751"
+      }
+    ],
+    "offered": "closed",
+    "sourcePage": 40
+  },
+  {
+    "id": "CP423324",
+    "code": "CP 423 324",
+    "thaiName": "ความมั่นคงปลอดภัยฐานข้อมูลและเว็บ",
+    "englishName": "Database and Web Security",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "platform",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "open",
+    "offeredTerm": "1/2568",
+    "instructor": "อ. มัลลิกา",
+    "sourcePage": 40
+  },
+  {
+    "id": "CP423325",
+    "code": "CP 423 325",
+    "thaiName": "ความมั่นคงปลอดภัยเครือข่ายไร้สาย เครือข่ายเคลื่อนที่และอินเทอร์เน็ตของสรรพสิ่ง",
+    "englishName": "Wireless network, Mobile network, and Internet of Things Security",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "platform",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "closed",
+    "sourcePage": 40
+  },
+  {
+    "id": "CP423326",
+    "code": "CP 423 326",
+    "thaiName": "ความมั่นคงปลอดภัยบนคลาวด์",
+    "englishName": "Cloud Security",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "platform",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423751"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 751"
+      }
+    ],
+    "offered": "closed",
+    "sourcePage": 40
+  },
+  {
+    "id": "CP423327",
+    "code": "CP 423 327",
+    "thaiName": "การพัฒนาและดำเนินงานด้านความปลอดภัยบนแพลตฟอร์ม",
+    "englishName": "Security Platform Development and Operation",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "platform",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423751"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 751"
+      }
+    ],
+    "offered": "tba",
+    "offeredTerm": "2/2568",
+    "offeredNote": "DevSecOps (TBD) ในตารางคาดว่าตรงกับวิชานี้ — รอประกาศชื่อผู้สอนและรายละเอียดอย่างเป็นทางการ",
+    "sourcePage": 40
+  },
+
+  {
+    "id": "CP423431",
+    "code": "CP 423 431",
+    "thaiName": "การโจมตีไซเบอร์อย่างมีจริยธรรม",
+    "englishName": "Ethical Cybersecurity Hacking",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "defense",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "open",
+    "offeredTerm": "1/2568",
+    "instructor": "อ. ชาติชาย",
+    "sourcePage": 40
+  },
+  {
+    "id": "CP423432",
+    "code": "CP 423 432",
+    "thaiName": "การป้องกันไซเบอร์และการตรวจจับ/ป้องกันการบุกรุก",
+    "englishName": "Cybersecurity Defense and Intrusion Detection/Protection",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "defense",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "open",
+    "offeredTerm": "1/2568",
+    "offeredNote": "Firewall / IDS / IPS",
+    "instructor": "อ. เพชร",
+    "sourcePage": 40
+  },
+  {
+    "id": "CP423433",
+    "code": "CP 423 433",
+    "thaiName": "การทดสอบการเจาะระบบ",
+    "englishName": "Cybersecurity Penetration Testing",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "defense",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "open",
+    "offeredTerm": "2/2568",
+    "sourcePage": 40
+  },
+  {
+    "id": "CP423434",
+    "code": "CP 423 434",
+    "thaiName": "การจัดการเหตุการณ์ความผิดปกติด้านความมั่นคงปลอดภัยไซเบอร์",
+    "englishName": "Cybersecurity Incident Event Handling",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "defense",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "open",
+    "offeredTerm": "1/2568",
+    "offeredNote": "CYSA + SOC",
+    "instructor": "อ. เพชร และ อ. เจษฎา ทองก้านเหลือง",
+    "sourcePage": 41
+  },
+  {
+    "id": "CP423435",
+    "code": "CP 423 435",
+    "thaiName": "ข่าวกรองภัยคุกคามไซเบอร์",
+    "englishName": "Cybersecurity Threat Intelligence",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "defense",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "closed",
+    "sourcePage": 41
+  },
+  {
+    "id": "CP423436",
+    "code": "CP 423 436",
+    "thaiName": "นิติดิจิทัล",
+    "englishName": "Digital Forensic",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "defense",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "open",
+    "offeredTerm": "2/2568",
+    "sourcePage": 41
+  },
+  {
+    "id": "CP423437",
+    "code": "CP 423 437",
+    "thaiName": "การจำลองยุทธทางความมั่นคงปลอดภัยไซเบอร์",
+    "englishName": "Cybersecurity Range Simulation",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "defense",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "closed",
+    "sourcePage": 41
+  },
+
+  {
+    "id": "CP423531",
+    "code": "CP 423 531",
+    "thaiName": "การตรวจสอบระบบสารสนเทศและความมั่นคงปลอดภัยไซเบอร์",
+    "englishName": "Information System and Cybersecurity Audit",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "elective",
+    "subgroup": "policy",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423751"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 751"
+      }
+    ],
+    "offered": "open",
+    "offeredTerm": "1/2568",
+    "instructor": "อ. ปวีณา",
+    "sourcePage": 41
+  },
+  {
+    "id": "CP423532",
+    "code": "CP 423 532",
+    "thaiName": "สถาปัตยกรรมความปลอดภัยสำหรับองค์กร",
+    "englishName": "Enterprise Security Architecture",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "elective",
+    "subgroup": "policy",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "closed",
+    "sourcePage": 41
+  },
+  {
+    "id": "CP423533",
+    "code": "CP 423 533",
+    "thaiName": "มาตรฐานและกรอบแนวคิดด้านความมั่นคงปลอดภัยไซเบอร์",
+    "englishName": "Cybersecurity Standards and Framework",
+    "credits": 3,
+    "creditStructure": "3(3-0-6)",
+    "category": "elective",
+    "subgroup": "policy",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423751"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 751"
+      }
+    ],
+    "offered": "open",
+    "offeredTerm": "2/2568",
+    "sourcePage": 41
+  },
+
+  {
+    "id": "CP423641",
+    "code": "CP 423 641",
+    "thaiName": "ความมั่นคงปลอดภัยไซเบอร์ในเทคโนโลยีเชิงปฏิบัติงาน",
+    "englishName": "Cybersecurity in Operational Technology",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "theory",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "closed",
+    "sourcePage": 41
+  },
+  {
+    "id": "CP423642",
+    "code": "CP 423 642",
+    "thaiName": "วิทยาการการเข้ารหัสสมัยใหม่และการวิเคราะห์การเข้ารหัส",
+    "englishName": "Modern Cryptography and Cryptanalysis",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "theory",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "open",
+    "offeredTerm": "2/2568",
+    "sourcePage": 42
+  },
+  {
+    "id": "CP423643",
+    "code": "CP 423 643",
+    "thaiName": "การทำเหมืองและวิเคราะห์ความมั่นคงปลอดภัยไซเบอร์",
+    "englishName": "Cybersecurity Mining and Analytic",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "theory",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "closed",
+    "sourcePage": 42
+  },
+  {
+    "id": "CP423644",
+    "code": "CP 423 644",
+    "thaiName": "แอปพลิเคชันไร้ศูนย์กลาง บล็อกเชนและเทคโนโลยีสกุลเงินดิจิทัล",
+    "englishName": "Decentralized Application, Blockchain and Cryptocurrency Technology",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "theory",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "closed",
+    "sourcePage": 42
+  },
+  {
+    "id": "CP423645",
+    "code": "CP 423 645",
+    "thaiName": "การรักษาความมั่นคงปลอดภัยไซเบอร์เชิงควอนตัม",
+    "englishName": "Quantum Cybersecurity",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "theory",
+    "prerequisites": [
+      {
+        "type": "or",
+        "courses": ["CP422031", "CP423752"],
+        "allowEquivalent": true,
+        "textOriginal": "CP 422 031 หรือ เทียบเท่า หรือ CP 423 752"
+      }
+    ],
+    "offered": "closed",
+    "sourcePage": 42
+  },
+  {
+    "id": "CP423701",
+    "code": "CP 423 701",
+    "thaiName": "ปัญหาพิเศษด้านความมั่นคงปลอดภัยไซเบอร์",
+    "englishName": "Special Topics in Cybersecurity",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "theory",
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "offered": "closed",
+    "sourcePage": 42
+  },
+
+  {
+    "id": "CP423751",
+    "code": "CP 423 751",
+    "thaiName": "พื้นฐานวิทยาการคำนวณ 1",
+    "englishName": "Fundamental of Computing I",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "foundation",
+    "prerequisites": [{ "type": "none", "textOriginal": "ไม่มี" }],
+    "offered": "closed",
+    "offeredNote": "สำหรับวิชาโทเฉพาะนักศึกษาสาขาอื่น",
+    "sourcePage": 42
+  },
+  {
+    "id": "CP423752",
+    "code": "CP 423 752",
+    "thaiName": "พื้นฐานวิทยาการคำนวณ 2",
+    "englishName": "Fundamental of Computing II",
+    "credits": 3,
+    "creditStructure": "3(2-2-5)",
+    "category": "elective",
+    "subgroup": "foundation",
+    "prerequisites": [
+      {
+        "type": "course",
+        "courses": ["CP423751"],
+        "textOriginal": "CP 423 751"
+      }
+    ],
+    "offered": "closed",
+    "offeredNote": "สำหรับวิชาโทเฉพาะนักศึกษาสาขาอื่น",
+    "sourcePage": 42
+  }
+]

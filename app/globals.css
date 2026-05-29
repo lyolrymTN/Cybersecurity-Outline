@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #f7f9fc;
+  --color-fg: #0e1f3f;
+  --color-card: #ffffff;
+  --color-card-2: #f8fafc;
+  --color-border: #e2e8f0;
+  --color-muted: #64748b;
+  --color-subtle: #94a3b8;
+  --color-accent: #0e7490;
+  --hero-bg: radial-gradient(ellipse at top, rgba(34, 211, 238, 0.18), transparent 60%),
+    linear-gradient(180deg, #050b1c 0%, #0a1730 100%);
+  color-scheme: light;
+}
+
+.dark {
+  --color-bg: #050b1c;
+  --color-fg: #e2e8f0;
+  --color-card: #0e1f3f;
+  --color-card-2: #0a1730;
+  --color-border: #1e293b;
+  --color-muted: #94a3b8;
+  --color-subtle: #64748b;
+  --color-accent: #22d3ee;
+  --hero-bg: radial-gradient(ellipse at top, rgba(34, 211, 238, 0.22), transparent 60%),
+    linear-gradient(180deg, #02060f 0%, #050b1c 100%);
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: "Prompt", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-feature-settings: "kern", "liga", "calt";
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+.container-page {
+  @apply mx-auto w-full max-w-[1600px] px-4 sm:px-6 lg:px-8;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition shadow-sm;
+}
+.btn-primary {
+  @apply btn bg-navy-700 text-white hover:bg-navy-800 dark:bg-cyan-500 dark:text-navy-950 dark:hover:bg-cyan-400;
+}
+.btn-outline {
+  @apply btn border border-navy-200 bg-white text-navy-700 hover:bg-navy-50 dark:border-navy-700 dark:bg-navy-900 dark:text-slate-100 dark:hover:bg-navy-800;
+}
+.btn-ghost {
+  @apply btn text-navy-700 hover:bg-navy-50 dark:text-slate-100 dark:hover:bg-navy-800;
+}
+.btn-cyber {
+  @apply btn bg-gradient-to-r from-cyan-500 to-navy-600 text-white hover:opacity-95 dark:from-cyan-400 dark:to-navy-500;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-200 bg-white shadow-card dark:border-navy-700 dark:bg-navy-900;
+}
+
+.badge {
+  @apply inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-medium;
+}
+
+.chip {
+  @apply inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs font-medium;
+}
+
+.kbd {
+  @apply rounded border border-slate-300 bg-slate-50 px-1.5 py-0.5 font-mono text-[11px] text-slate-700 dark:border-navy-700 dark:bg-navy-800 dark:text-slate-200;
+}
+
+.surface {
+  background: var(--color-card);
+  border-color: var(--color-border);
+}
+
+.surface-2 {
+  background: var(--color-card-2);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.hero-grid {
+  background-image: radial-gradient(
+      circle at 1px 1px,
+      rgba(255, 255, 255, 0.12) 1px,
+      transparent 0
+    );
+  background-size: 24px 24px;
+}
+
+.bg-hero {
+  background: var(--hero-bg);
+}
+
+.scroll-fade::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scroll-fade::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.4);
+  border-radius: 999px;
+}
+
+/* ------------------------------------------------------------
+ * Dark-mode utility overrides
+ *
+ * Many pages were written with the light palette in mind
+ * (text-navy-900, text-slate-700, bg-slate-50, ...). Rather
+ * than editing every occurrence we remap the most common
+ * utilities under `.dark` so content stays legible in both
+ * themes without page-by-page edits.
+ * ---------------------------------------------------------- */
+.dark .text-navy-900 {
+  color: #e2e8f0;
+}
+.dark .text-slate-700 {
+  color: #cbd5e1;
+}
+.dark .text-slate-600 {
+  color: #94a3b8;
+}
+.dark .text-slate-500 {
+  color: #94a3b8;
+}
+.dark .text-slate-800 {
+  color: #e2e8f0;
+}
+.dark .text-slate-400 {
+  color: #94a3b8;
+}
+.dark .text-cyan-700 {
+  color: #67e8f9;
+}
+.dark .text-fuchsia-700 {
+  color: #f0abfc;
+}
+.dark .bg-white {
+  background-color: #0e1f3f;
+}
+.dark .bg-slate-50 {
+  background-color: rgba(15, 23, 42, 0.45);
+}
+.dark .bg-slate-100 {
+  background-color: #1e293b;
+}
+.dark .border-slate-200 {
+  border-color: #1e293b;
+}
+.dark .border-slate-100 {
+  border-color: #162f5c;
+}
+.dark .bg-navy-50 {
+  background-color: rgba(34, 211, 238, 0.1);
+}
+.dark .bg-cyan-50 {
+  background-color: rgba(34, 211, 238, 0.1);
+}
+.dark .text-navy-700 {
+  color: #67e8f9;
+}
+.dark .hover\:bg-slate-50:hover {
+  background-color: rgba(15, 23, 42, 0.55);
+}
+.dark .hover\:bg-slate-100:hover {
+  background-color: #1e293b;
+}
+.dark .hover\:bg-slate-200:hover {
+  background-color: #334155;
+}
+
+/* Soft-tinted alert blocks keep their color identity but
+ * the text needs a lighter shade for legibility on dark. */
+.dark .bg-amber-50 {
+  background-color: rgba(245, 158, 11, 0.12);
+}
+.dark .text-amber-900 {
+  color: #fcd34d;
+}
+.dark .text-amber-800 {
+  color: #fcd34d;
+}
+.dark .text-amber-700 {
+  color: #fbbf24;
+}
+.dark .border-amber-200 {
+  border-color: rgba(245, 158, 11, 0.35);
+}
+.dark .bg-amber-50\/40 {
+  background-color: rgba(245, 158, 11, 0.08);
+}
+
+.dark .bg-emerald-50 {
+  background-color: rgba(16, 185, 129, 0.12);
+}
+.dark .text-emerald-800 {
+  color: #6ee7b7;
+}
+.dark .text-emerald-700 {
+  color: #6ee7b7;
+}
+.dark .border-emerald-200 {
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.dark .bg-red-50 {
+  background-color: rgba(239, 68, 68, 0.12);
+}
+.dark .text-red-900 {
+  color: #fca5a5;
+}
+.dark .text-red-700 {
+  color: #fca5a5;
+}
+.dark .border-red-200 {
+  border-color: rgba(239, 68, 68, 0.35);
+}
+
+.dark .bg-fuchsia-50 {
+  background-color: rgba(217, 70, 239, 0.12);
+}
+.dark .text-fuchsia-600 {
+  color: #f0abfc;
+}
+.dark .text-fuchsia-700 {
+  color: #f0abfc;
+}
+.dark .border-fuchsia-200 {
+  border-color: rgba(217, 70, 239, 0.35);
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+    color: black;
+  }
+}

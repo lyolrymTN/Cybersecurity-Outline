@@ -1,0 +1,170 @@
+{
+  "program": {
+    "thaiName": "หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาความมั่นคงปลอดภัยไซเบอร์",
+    "englishName": "Bachelor of Science Program in Cybersecurity",
+    "degreeShort": "วท.บ. (ความมั่นคงปลอดภัยไซเบอร์)",
+    "degreeShortEnglish": "B.Sc. (Cybersecurity)",
+    "faculty": "วิทยาลัยการคอมพิวเตอร์",
+    "facultyEnglish": "College of Computing",
+    "university": "มหาวิทยาลัยขอนแก่น",
+    "universityEnglish": "Khon Kaen University",
+    "duration": "4 ปี",
+    "totalCredits": 124,
+    "language": "ไทย / อังกฤษ",
+    "updatedAt": "2023-03-07",
+    "sourceLabel": "ข้อมูลจากหน้าตัวอย่างแผนการศึกษาของวิทยาลัยการคอมพิวเตอร์ มข."
+  },
+  "common": [
+    {
+      "year": 1,
+      "semester": 1,
+      "label": "ปีที่ 1 ภาคการศึกษาที่ 1",
+      "totalCredits": 22,
+      "cumulative": 22,
+      "courses": ["LI101001", "GE151144", "GE341511", "SC602005", "SC401201", "CP421021", "CP421011", "CP422001"]
+    },
+    {
+      "year": 1,
+      "semester": 2,
+      "label": "ปีที่ 1 ภาคการศึกษาที่ 2",
+      "totalCredits": 21,
+      "cumulative": 43,
+      "courses": ["LI101002", "SC002104", "SC402401", "CP421022", "CP421023", "CP421024", "CP001001"]
+    },
+    {
+      "year": 2,
+      "semester": 1,
+      "label": "ปีที่ 2 ภาคการศึกษาที่ 1",
+      "totalCredits": 21,
+      "cumulative": 64,
+      "courses": ["LI102003", "GE363789", "CP422052", "CP422021", "CP422022", "CP421025", "CP422011"]
+    },
+    {
+      "year": 2,
+      "semester": 2,
+      "label": "ปีที่ 2 ภาคการศึกษาที่ 2",
+      "totalCredits": 18,
+      "cumulative": 82,
+      "courses": ["LI102004", "CP422031", "CP422013", "CP422641", "CP422032", "CP422012"]
+    }
+  ],
+  "tracks": {
+    "project": {
+      "label": "แผนเลือกเรียนวิชาโครงงาน (Project Track)",
+      "terms": [
+        {
+          "year": 3,
+          "semester": 1,
+          "label": "ปีที่ 3 ภาคการศึกษาที่ 1",
+          "totalCredits": 21,
+          "cumulative": 103,
+          "courses": ["CP423200"]
+        },
+        {
+          "year": 3,
+          "semester": 2,
+          "label": "ปีที่ 3 ภาคการศึกษาที่ 2",
+          "totalCredits": 9,
+          "cumulative": 112,
+          "courses": ["CP423151", "CP423131", "CP423132", "CP423741"]
+        },
+        {
+          "year": 4,
+          "semester": 1,
+          "label": "ปีที่ 4 ภาคการศึกษาที่ 1",
+          "totalCredits": 9,
+          "cumulative": 121,
+          "courses": ["CP424731", "FREE_ELEC_PROJECT_Y4S1"]
+        },
+        {
+          "year": 4,
+          "semester": 2,
+          "label": "ปีที่ 4 ภาคการศึกษาที่ 2",
+          "totalCredits": 3,
+          "cumulative": 124,
+          "courses": ["CP424732"]
+        }
+      ]
+    },
+    "coop": {
+      "label": "แผนเลือกเรียนวิชาสหกิจศึกษา (Co-op Track)",
+      "terms": [
+        {
+          "year": 3,
+          "semester": 1,
+          "label": "ปีที่ 3 ภาคการศึกษาที่ 1",
+          "totalCredits": 21,
+          "cumulative": 103,
+          "courses": ["CP423200"]
+        },
+        {
+          "year": 3,
+          "semester": 2,
+          "label": "ปีที่ 3 ภาคการศึกษาที่ 2",
+          "totalCredits": 9,
+          "cumulative": 112,
+          "courses": ["CP423151", "CP423131", "CP423132", "CP423741"]
+        },
+        {
+          "year": 4,
+          "semester": 1,
+          "label": "ปีที่ 4 ภาคการศึกษาที่ 1",
+          "totalCredits": 6,
+          "cumulative": 118,
+          "courses": ["CP002001", "FREE_ELEC_COOP_Y4S1"]
+        },
+        {
+          "year": 4,
+          "semester": 2,
+          "label": "ปีที่ 4 ภาคการศึกษาที่ 2",
+          "totalCredits": 6,
+          "cumulative": 124,
+          "courses": ["CP424785"]
+        }
+      ]
+    },
+    "wil": {
+      "label": "แผน Work-Integrated Learning (WIL)",
+      "note": "รายละเอียดของแผน WIL ใน PDF ที่ให้มาไม่ได้ระบุรายวิชาทุกรายการอย่างละเอียด ข้อมูลในส่วนนี้อ้างอิงจากภาพ CY Curriculum Outline และต้องตรวจสอบกับหลักสูตร",
+      "needsVerification": true,
+      "terms": [
+        {
+          "year": 3,
+          "semester": 1,
+          "label": "ปีที่ 3 ภาคการศึกษาที่ 1",
+          "totalCredits": 21,
+          "cumulative": 103,
+          "courses": ["CP423200"],
+          "note": "ประกอบด้วย Pre Co-Op, Elective 1-5 และ Free Elective 1-2 ตามภาพ Curriculum Outline"
+        },
+        {
+          "year": 3,
+          "semester": 2,
+          "label": "ปีที่ 3 ภาคการศึกษาที่ 2",
+          "totalCredits": 9,
+          "cumulative": 112,
+          "courses": ["CP423151", "CP423131", "CP423132"],
+          "note": "ตามภาพ Curriculum Outline ประกอบด้วย Cert.1, Cert.2, Cert.3 และ WIL 1"
+        },
+        {
+          "year": 4,
+          "semester": 1,
+          "label": "ปีที่ 4 ภาคการศึกษาที่ 1 (WIL 2)",
+          "totalCredits": 6,
+          "cumulative": 118,
+          "courses": [],
+          "note": "WIL 2 — 6 หน่วยกิต (ต้องตรวจสอบรายวิชากับหลักสูตร)"
+        },
+        {
+          "year": 4,
+          "semester": 2,
+          "label": "ปีที่ 4 ภาคการศึกษาที่ 2 (WIL 3)",
+          "totalCredits": 6,
+          "cumulative": 124,
+          "courses": [],
+          "note": "WIL 3 — 6 หน่วยกิต (ต้องตรวจสอบรายวิชากับหลักสูตร)"
+        }
+      ]
+    }
+  }
+}
